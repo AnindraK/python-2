@@ -10,10 +10,18 @@ else:
 
 if temp > 35:
        print("Warning: it is schorching hot!")
-if temp >25:
+elif temp >25:
        print("Weather: warm and sunny!")
-if temp > 15:
+elif temp > 15:
        print("weather: cool and brezzy!")
 else:
        print("Weather: Cold- STAY WARM!")
+
+import datetime
+import calendar
+
+now = datetime.datetime.now()
+print("City:", city)
+print("Time now:", now)
+print(calendar.calendar(now.year))
     
